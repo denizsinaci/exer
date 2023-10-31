@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -31,7 +32,7 @@ int main(int argc, char *argv[])
         for(int i = 1; i <= n; ++i) {
             factorial *= i;
         }
-        cout << "Factorial of " << n << " = " << factorial;    
+        cout << "Factorial of " << n << " = " << fixed << factorial;    
     }
    
    return 0;
