@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
    
    sum = ((b*(b+1) - a*(a+1))/2)-b+a;
    
-   std::cout << "Hello CMake!" << std::endl;
+   std::cout << "For part 1a!" << std::endl;
    
    std::cout << sum << "\n";
    
