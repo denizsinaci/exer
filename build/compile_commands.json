@@ -1,0 +1,8 @@
+[
+{
+  "directory": "/Users/denizsinaci/Desktop/GIT Projects/exer/build",
+  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -o CMakeFiles/exadv.dir/main.cpp.o -c \"/Users/denizsinaci/Desktop/GIT Projects/exer/main.cpp\"",
+  "file": "/Users/denizsinaci/Desktop/GIT Projects/exer/main.cpp",
+  "output": "CMakeFiles/exadv.dir/main.cpp.o"
+}
+]

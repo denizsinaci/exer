@@ -1,5 +1,6 @@
 #include <iostream>
 #include <iomanip>
+#include <cstdlib>
 using namespace std;
 
 int main(int argc, char *argv[])
@@ -16,7 +17,7 @@ int main(int argc, char *argv[])
    
    cout << "For part 1a!" << endl;
    
-   cout << sum << "\n";
+   cout << abs(sum) << "\n";
    
    cout << "For part 1b!" << endl;
    
