@@ -1,0 +1,2 @@
+# exer
+cmake trials
