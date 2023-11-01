@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
    cin >> b;
    
    sum = ((b*(b+1) - a*(a+1))/2)-b+a;
-   
+    
    cout << "For part 1a!" << endl;
    
    cout << abs(sum) << "\n";
