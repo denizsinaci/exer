@@ -3,38 +3,43 @@
 #include <cstdlib>
 using namespace std;
 
+// Function to calculate the sum of integers from 'a' to 'b'
+int sumOfIntegers(int a, int b) {
+    return ((b*(b+1) - a*(a+1))/2) - b + a;
+}
+
+// Function to calculate the factorial of 'n'
+double factorialOfNumber(int n) {
+    double factorial = 1.0;
+    for(int i = 1; i <= n; ++i) {
+        factorial *= i;
+    }
+    return factorial;
+}
+
 int main(int argc, char *argv[])
 {
    int a, b;
-   int sum;
    
    cout << "Type number 1: ";
    cin >> a;
    cout << "Type number 2: ";
    cin >> b;
    
-   sum = ((b*(b+1) - a*(a+1))/2)-b+a;
-    
    cout << "For part 1a!" << endl;
-   
-   cout << abs(sum) << "\n";
+   cout << abs(sumOfIntegers(a, b)) << "\n";
    
    cout << "For part 1b!" << endl;
    
    int n;
-    double factorial = 1.0;
+   cout << "Enter a positive integer: ";
+   cin >> n;
 
-    cout << "Enter a positive integer: ";
-    cin >> n;
-
-    if (n < 0)
-        cout << "Error! Factorial of a negative number doesn't exist.";
-    else {
-        for(int i = 1; i <= n; ++i) {
-            factorial *= i;
-        }
-        cout << "Factorial of " << n << " = " << fixed << factorial;    
-    }
+   if (n < 0) {
+       cout << "Error! Factorial of a negative number doesn't exist." << endl;
+   } else {
+       cout << "Factorial of " << n << " = " << fixed << factorialOfNumber(n) << endl;    
+   }
    
    return 0;
 }
